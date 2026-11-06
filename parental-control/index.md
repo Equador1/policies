@@ -4,7 +4,7 @@ title: Politique de confidentialité — Contrôle Parental Web
 
 # Politique de confidentialité — Contrôle Parental Web
 
-**Dernière mise à jour : 13 octobre 2026**
+**Dernière mise à jour : 5 novembre 2026**
 
 ## En résumé
 
