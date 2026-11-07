@@ -4,7 +4,7 @@ title: Politique de confidentialité — Contrôle Parental Web
 
 # Politique de confidentialité — Contrôle Parental Web
 
-**Dernière mise à jour : 5 novembre 2026**
+**Dernière mise à jour : 6 novembre 2026**
 
 ## En résumé
 
@@ -23,6 +23,10 @@ Pour fonctionner, l'extension conserve localement :
 | Empreinte du mot de passe parent | Protéger l'accès aux réglages. Le mot de passe lui-même n'est jamais enregistré : seule une empreinte PBKDF2-SHA256 (100 000 itérations, sel aléatoire) l'est, et elle ne permet pas de retrouver le mot de passe |
 | Horodatage de la dernière activité et périodes d'inactivité prolongée | Signaler au parent que l'extension a été arrêtée ou désactivée |
 | Adresse de la page en cours de consultation dans chaque onglet | Savoir quel site a été bloqué et d'où vient un lien ouvert. Effacé à la fermeture de l'onglet et à la fermeture du navigateur |
+| Pause en cours et pauses passées | Lever temporairement tout blocage à la demande du parent, et lui indiquer dans les réglages quand une pause a eu lieu. Seuls une heure de début, une heure de fin et une durée sont enregistrées, jamais les sites consultés pendant la pause |
+| Périodes de tolérance en cours | Laisser aboutir les redirections d'une authentification (connexion Google, OAuth) sans bloquer l'étape intermédiaire. Chaque période dure deux minutes et expire d'elle-même |
+| Journal technique des erreurs, 50 entrées au maximum | Permettre au parent de constater dans les réglages qu'une opération interne a échoué. Chaque entrée contient une heure, le nom de l'opération et le message d'erreur renvoyé par le navigateur. Ces messages proviennent du navigateur et peuvent, dans de rares cas, mentionner une adresse ; un bouton des réglages efface le journal |
+| Activation du mode de journalisation détaillée | Retenir ce réglage, qui n'écrit que dans la console du navigateur et n'enregistre rien de plus |
 
 ## Ce que l'extension ne fait pas
 
